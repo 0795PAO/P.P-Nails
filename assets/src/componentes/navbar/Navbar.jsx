@@ -1,32 +1,20 @@
-import React from "react";
+import React from 'react';
 
 const Navbar = () => {
     return (
-        <>
-            <nav className="header-wrapper scroll-header"> 
-                <div className="container">
-                    <div className="row">
-                        <div>
-                            <div className="navigation">
-                                <ul className="navbar-nav-list">
-                                    <li className="nav-item">Home</li>
-                                    <li className="nav-item">Prevention</li>
-                                    <li className="nav-item">Qurantine</li>
-                                    <li className="nav-item">Pages</li>
-                                    <li className="nav-item">About</li>
-                                    <li className="nav-item">About</li>
-                                    <li className="nav-item">Help</li>
-                                    <div class="signin-btn">
-                                    <a class="btn btn-primary d-none d-lg-block" href="./tracker.html">Tracker</a>
-                                    </div>
-                                </ul>
-                            </div>  
-                        </div> 
-                    </div>
-                </div>
-            </nav>
-        </>
-    )
-}
+        <nav className="bg-pink-100 flex justify-center items-center py-4">
+            <div className="space-x-12 text-black font-semibold">
+                <a href="#acerca" className="hover:text-pink-500 no-underline">ACERCA DE</a>
+                <a href="#servicios" className="hover:text-pink-500 no-underline">SERVICIOS</a>
+                <a href="#galeria" className="hover:text-pink-500 no-underline">GALERÍA</a>
+                <a href="#contacto" className="hover:text-pink-500 no-underline">CONTACTO</a>
+                <a href="#especiales" className="hover:text-pink-500 no-underline">ESPECIALES</a>
+                <a href="#reservas" className="hover:text-pink-500 no-underline">RESERVAS ONLINE</a>
+                <a href="#suscribir" className="hover:text-pink-500 no-underline">SUSCRIBIR</a>
+            </div>
+        </nav>
+    );
+};
 
 export default Navbar;
+
